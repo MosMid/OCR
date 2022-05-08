@@ -1,0 +1,357 @@
+.box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+ }
+html
+{
+    max-width: 1920px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body
+{
+    width: 95%;
+    margin: auto;
+}
+main
+ {
+     display: flex;
+     justify-content: space-between;
+ }
+#logo
+{
+    width: 100px;
+    height: auto;
+}
+a
+{
+    text-decoration: none;
+    margin-left: 25px;
+}
+h1
+{
+    font-size: 22px;
+}
+h2
+{
+    font-size: 18px;
+}
+h3
+{
+    font-size: 16px;
+}
+#heb
+{
+    color: blue;
+    border-top: 5px solid;
+    padding-top: 17px;
+}
+
+#activ
+{
+    color: gray;
+}
+ #hebergement
+ {
+     background-color: #f2f2f2;
+     width: 70%;
+     padding: 20px;
+     margin: 5px;
+     border-radius: 10px;
+     box-sizing: border-box;
+     grid-template-columns: repeat(3, 32%);
+     grid-template-rows: auto;
+ }
+ #populaire
+ {
+     background-color: #f2f2f2;
+     width: 30%;
+     padding: 20px;
+     margin: 5px;
+     border-radius: 10px;
+     box-sizing: border-box;
+ }
+ #resultats
+ {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+.star
+{
+    margin-right: 2px;
+}
+.content
+ {
+     width: 30%;
+     border-radius: 10px;
+     height: 100%;
+     padding: 3px;
+     margin: 5px;
+     margin-bottom: 20px;
+     border-radius: 10px;
+     box-sizing: border-box;
+     background-color: white;
+     box-shadow: 5px 10px 18px #888888;
+     cursor: pointer;
+     transition-duration: 0.4s;
+ }
+ .content:hover
+ {
+    transform: scale(1.02);
+ }
+ .imgo
+{
+    width: 100%;
+    height: 130px;   
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+}
+.hebtext
+{
+    margin-left: 10px;
+
+}
+ .photo
+ {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+ }
+
+footer
+ {
+     display: flex;
+     justify-content: space-around;
+     background-color: #f2f2f2;
+     line-height: 1.5;
+ }
+
+ header
+ {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ ul
+ {
+    list-style-type: none;
+    width: 33%;
+    margin-bottom: 20px;
+ }
+ .lili
+ {
+    cursor: pointer;
+ }
+ .lili:hover {
+    text-decoration: underline;
+  }
+ span
+ {
+     font-weight: bold;
+ }
+ #filtre
+ {
+     width: 60%;
+     display: flex;
+     justify-content: space-between;
+ }
+ #logo
+ {
+     margin: 10px;
+ }
+ #headnav
+ {
+     margin-top: 20px;
+     margin-right: 20px;
+ }
+#localisation
+{
+    border-radius: 7px 0 0 7px;
+    border-color: #d9d9d9;
+    border-style: solid;
+    background: #d9d9d9;
+    width: 25px;
+}
+#find
+{
+    border-radius: 0 7px 7px 0;
+    border-color: blue;
+    color: white;
+    border-style: solid;
+    background: blue;
+}
+.butfil 
+{
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    border-color: #deebff;
+    border-style: solid;
+    background: linear-gradient(90deg, #deebff 28px, white 28px);
+}
+.butfil:hover 
+{
+    background: #deebff;
+}
+span
+{
+    background-color: white;
+}
+button
+{
+    cursor:pointer;
+    font-weight: bold;
+}
+i
+{
+    margin-right: 15px;
+}
+input[type=text]
+{
+    border: 15px;
+    border-color: black;
+}
+#searchbar
+{
+    background-color: #d9d9d9;
+    border-radius: 7px;
+    width: 372px;
+}
+ #activite, #recherche
+ {
+     margin-top: 5px;
+     margin-bottom: 10px;
+     display: flex;
+     flex-direction: column;
+ }
+.popbloc
+ {
+    display: flex;
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 5px 10px 18px #888888;
+    cursor: pointer;
+    transition: 0.4S;
+ }
+.impop
+{
+    width: 40%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.popbloc:hover
+ {
+    transform: scale(1.02);
+ }
+.pophoto
+{
+    width: 100%;
+    height: 145px;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}
+.popstar
+{
+    margin-top: 40px;
+}
+#activites
+{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around;
+    max-height: 450px;
+}
+.actbloc
+{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 5px; 
+    box-shadow: 5px 10px 18px #888888;
+    cursor: pointer;
+    transition: 0.4S;
+}
+.actbloc:hover
+{
+    transform: scale(1.02);
+}
+.scale
+{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.scale:hover
+{
+    transform: scale(1.02);
+}
+.imact
+{
+    width: 100%;
+    height: 90%;   
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+}
+.actphoto
+{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.son
+{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+}
+.sonactphoto
+{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.sonimact
+{
+    width: 100%;
+    height: 150px;   
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+}
+.sonactbloc
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 10px; 
+    box-shadow: 5px 10px 18px #888888;    
+}
+.acti
+{
+    margin-left: 10px;
+}
