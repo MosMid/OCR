@@ -229,7 +229,7 @@ input[type=text]
 {
     background-color: #d9d9d9;
     border-radius: 7px;
-    width: 372px;
+    width: 338px;
     height: 25px;
 }
  #activite, #recherche
@@ -477,6 +477,7 @@ input[type=text]
     }
     #findic
     {
+        visibility: visible;
         position: relative;
         color: white;
         transform: scale(1.5);
