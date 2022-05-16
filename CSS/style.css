@@ -5,14 +5,15 @@
  }
 html
 {
-    max-width: 1920px;
+    max-width: 1366px;
     margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 body
 {
     width: 95%;
     margin: auto;
+    height: auto;
 }
 main
  {
@@ -35,11 +36,11 @@ h1
 }
 h2
 {
-    font-size: 18px;
+    font-size: 16px;
 }
 h3
 {
-    font-size: 16px;
+    font-size: 14px;
 }
 #heb
 {
@@ -52,26 +53,26 @@ h3
 {
     color: gray;
 }
- #hebergement
- {
+#hebergement
+{
      background-color: #f2f2f2;
      width: 70%;
-     padding: 20px;
+     padding: 10px;
      margin: 5px;
      border-radius: 10px;
      box-sizing: border-box;
      grid-template-columns: repeat(3, 32%);
      grid-template-rows: auto;
- }
- #populaire
- {
+}
+aside
+{
      background-color: #f2f2f2;
      width: 30%;
-     padding: 20px;
+     padding: 10px;
      margin: 5px;
      border-radius: 10px;
      box-sizing: border-box;
- }
+}
  #resultats
  {
      display: flex;
@@ -84,7 +85,7 @@ h3
 }
 .content
  {
-     width: 30%;
+     width: 32%;
      border-radius: 10px;
      height: 100%;
      padding: 3px;
@@ -157,9 +158,9 @@ footer
  }
  #filtre
  {
-     width: 60%;
+     width: 100%;
      display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
  }
  #logo
  {
@@ -186,9 +187,14 @@ footer
     border-style: solid;
     background: blue;
 }
+#findicon
+{
+    visibility: hidden;
+}
 .butfil 
 {
     height: 30px;
+    margin-left: 10px;
     margin-top: auto;
     margin-bottom: auto;
     transition-duration: 0.4s;
@@ -224,6 +230,7 @@ input[type=text]
     background-color: #d9d9d9;
     border-radius: 7px;
     width: 372px;
+    height: 25px;
 }
  #activite, #recherche
  {
@@ -354,4 +361,204 @@ input[type=text]
 .acti
 {
     margin-left: 10px;
+}
+#pactivite
+{
+    display: none;
+}
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    h1
+    {
+        font-size: 30px;
+    }
+    h2
+    {
+      font-size: 24px;
+    }
+    h3
+    {
+      font-size:20px;
+    }
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #headnav
+    {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #logo
+    {
+        margin: auto;
+        width: 35%;
+        height: auto;
+        padding-left: 15%;
+    }
+    #heb, #activ
+    {
+        border-top: none;
+        padding-top: 0%;
+        font-size: 25px;
+    }
+    #heb::after
+    {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #0065FC;
+        top: 170px;
+        left: -320px;
+    }
+    #activ::after
+    {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #F2F2F2;
+        top: 170px;
+        left: 360px;
+    }
+    #searchbar
+    {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 40px;
+        background: linear-gradient(90deg, #F2F2F2 90%, #0065FC 90%);
+    }
+    #localisation
+    {
+        position: relative;
+        top: -7px;
+        width: 5%;
+        height: 40px;
+    }
+    #loc
+    {
+        transform: scale(1.5);
+        position: relative;
+        left: 6px;
+        top: -2px;
+    }
+    input[type=text]
+    {
+        width: 80%;
+        height: 40px;
+        font-size: 30px;
+    }
+    #find
+    {
+        display: none;
+    }
+    #findicon
+    {
+        position: relative;
+        visibility: visible;
+        height: 40px;
+        top: -7px;
+        left: -5px;
+        width: 12%;
+        border-radius: 0 10px 10px 0;;
+        border: none;
+        background-color: #0065FC;
+    }
+    #findic
+    {
+        position: relative;
+        color: white;
+        transform: scale(1.5);
+        top: -2px;
+        left: 5px;
+    }
+    #filtre
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #hebergement
+    {
+        width: 100%;
+    }
+    .content
+    {
+        width: 100%;
+    }
+    .imgo
+    {
+        height: 40%;
+        max-height: 300px;
+    }
+    aside
+    {
+        width: 100%;
+    }
+    #activite
+    {
+        display: none;
+    }
+    #pactivite
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+    .pactbloc
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        padding: 3px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: white;
+        box-shadow: 5px 10px 18px #888888;
+    }
+    .pimact
+    {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 10px 10px 0 0;
+    }
+    .pactphoto
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .pactext
+    {
+        margin-left: 10px;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
