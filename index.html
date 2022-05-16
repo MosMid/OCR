@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>Booki</title>
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -12,16 +13,17 @@
             <img id="logo" src="images/logo/Booki.png" alt="">
             <div id="headnav">
                 <a href="#" id="heb">Hébérgements</a>
-                <a href="#" id="activ">Activités</a>
+                <a href="#activite" id="activ">Activités</a>
             </div>
         </header>
         <nav id="recherche">
             <h1>Trouvez votre logement pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div id="searchbar">
-                <button id="localisation"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+                <button id="localisation"><i class="fa fa-map-marker" id="loc" aria-hidden="true"></i></button>
                 <input type="text" placeholder="Search..">
                 <button id="find">Rechercher</button>
+                <button id="findicon"><i class="fa fa-search" id="findic" aria-hidden="true"></i></button>
             </div>
             <div id="filtre">
                 <p><span>Filtres</span></p>
@@ -189,6 +191,59 @@
                         <div class="actext">
                             <h3 class="acti">Parc Longchamp</h3>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pactivite">
+            <h1>Activités à Marseille</h1>
+            <div id="pactivites">
+                <div class="pactbloc">
+                    <div class="pimact">
+                        <img class="pactphoto" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                    </div>
+                    <div class="pactext">
+                        <h3 class="pacti">Vieux port</h3>
+                    </div>
+                </div>
+                <div class="pactbloc">
+                    <div class="pimact">
+                        <img class="pactphoto" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                    </div>
+                    <div class="pactext">
+                        <h3 class="pacti">Fort de Pomegues</h3>
+                    </div>
+                </div>
+                <div class="pactbloc">
+                    <div class="pimact">
+                        <img class="pactphoto" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                    </div>
+                    <div class="pactext">
+                        <h3 class="pacti">Iles du Frioul</h3>
+                    </div>
+                </div>
+                <div class="pactbloc">
+                    <div class="pimact">
+                        <img class="pactphoto" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                    </div>
+                    <div class="pactext">
+                        <h3 class="pacti">Park national des Calanques</h3>
+                    </div>
+                </div>
+                <div class="pactbloc">
+                    <div class="pimact">
+                        <img class="pactphoto" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                    </div>
+                    <div class="pactext">
+                        <h3 class="pacti">Notre dame de la garde</h3>
+                    </div>
+                </div>
+                <div class="pactbloc">
+                    <div class="pimact">
+                        <img class="pactphoto" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                    </div>
+                    <div class="pactext">
+                        <h3 class="pacti">Parc Longchamp</h3>
                     </div>
                 </div>
             </div>
