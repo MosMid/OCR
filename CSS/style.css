@@ -85,7 +85,7 @@ aside
 }
 .content
  {
-     width: 32%;
+     width: 30%;
      border-radius: 10px;
      height: 100%;
      padding: 3px;
@@ -193,6 +193,7 @@ footer
 }
 .butfil 
 {
+    position: relative;
     height: 30px;
     margin-left: 10px;
     margin-top: auto;
@@ -201,7 +202,25 @@ footer
     border-radius: 15px;
     border-color: #deebff;
     border-style: solid;
-    background: linear-gradient(90deg, #deebff 28px, white 28px);
+    background-color: white;
+    /*background: linear-gradient(90deg, #deebff 28px, white 28px);*/
+}
+.butfil span
+{
+    visibility: hidden;
+}
+.butfil::before
+{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #DEEBFF;
+    transition: all 0.4s ease-in-out;
 }
 .butfil:hover 
 {
@@ -219,6 +238,11 @@ button
 i
 {
     margin-right: 15px;
+}
+.butfil i
+{
+    z-index: 1;
+    position: absolute;
 }
 input[type=text]
 {
@@ -366,13 +390,102 @@ input[type=text]
 {
     display: none;
 }
+@media screen and (max-width: 992px)
+{
+    main
+    {
+        flex-direction: column;
+    }
+    #hebergement
+    {
+        width: 100%;
+    }
+    #resultat
+    {
+        width: 100%;
+    }
+    aside
+    {
+        width: 100%;
+    }
+    .pop
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .popbloc
+    {
+        width: 30%;
+    }
+    .content
+    {
+        width: 30%;
+    }
+    #activite
+    {
+        display: none;
+    }
+    #pactivite
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+    #pactivites
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .pactbloc
+    {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        border-radius: 10px;
+        padding: 3px;
+        margin: 5px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 5px 10px 18px #888888;
+    }
+    .pimact
+    {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 10px 10px 0 0;
+    }
+    .pactphoto
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .pactext
+    {
+        margin-left: 10px;
+    }
+}
 @media screen and (max-width: 768px)
 {
+    html
+    {
+        width: 100%;
+    }
     body
     {
         display: flex;
         flex-direction: column;
         font-size: 16px;
+        width: 100%;
     }
     h1
     {
@@ -391,6 +504,11 @@ input[type=text]
         display: flex;
         flex-direction: column;
     }
+    #recherche
+    {
+        width: 95%;
+        margin: auto;
+    }
     #headnav
     {
         display: flex;
@@ -408,29 +526,29 @@ input[type=text]
     }
     #heb, #activ
     {
+        width: 50%;
         border-top: none;
         padding-top: 0%;
         font-size: 25px;
+        text-align: center;
     }
     #heb::after
     {
         content: '';
-        position: absolute;
+        display: block;
+        position: relative;
         width: 100%;
         height: 3px;
         background-color: #0065FC;
-        top: 170px;
-        left: -320px;
     }
     #activ::after
     {
         content: '';
-        position: absolute;
+        display: block;
+        position: relative;
         width: 100%;
         height: 3px;
         background-color: #F2F2F2;
-        top: 170px;
-        left: 360px;
     }
     #searchbar
     {
@@ -443,7 +561,7 @@ input[type=text]
     {
         position: relative;
         top: -7px;
-        width: 5%;
+        width: 9%;
         height: 40px;
     }
     #loc
@@ -468,9 +586,9 @@ input[type=text]
         position: relative;
         visibility: visible;
         height: 40px;
-        top: -7px;
+        top: -6px;
         left: -5px;
-        width: 12%;
+        width: 6%;
         border-radius: 0 10px 10px 0;;
         border: none;
         background-color: #0065FC;
@@ -480,9 +598,9 @@ input[type=text]
         visibility: visible;
         position: relative;
         color: white;
-        transform: scale(1.5);
+        /*transform: scale(1.5);*/
         top: -2px;
-        left: 5px;
+        left: 0px;
     }
     #filtre
     {
@@ -504,12 +622,40 @@ input[type=text]
     }
     .imgo
     {
-        height: 40%;
-        max-height: 300px;
+        height: 100%;
+        height: 150px;
+    }
+    .photo
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     aside
     {
         width: 100%;
+        margin: auto;
+    }
+    .pop
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .popbloc
+    {
+        width: 100%;
+    }
+    .impop
+    {
+        height: auto;
+        max-height: 160px;
+        width: 40%;
+    }
+    .pophoto
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     #activite
     {
@@ -540,8 +686,7 @@ input[type=text]
     .pimact
     {
         width: 100%;
-        height: auto;
-        max-height: 300px;
+        height: 150px;
         overflow: hidden;
         justify-content: center;
         align-items: center;
@@ -552,6 +697,7 @@ input[type=text]
     {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
     .pactext
     {
@@ -561,5 +707,10 @@ input[type=text]
     {
         display: flex;
         flex-direction: column;
+        
+    }
+    footer ul
+    {
+        width: 90%;
     }
 }
