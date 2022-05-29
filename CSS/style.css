@@ -215,6 +215,10 @@ footer
     position: absolute;
 }*/
 
+#filtre p
+{
+    font-weight: bold;
+}
 .toggle
 {
     margin-top: 5px;
@@ -344,13 +348,17 @@ input[type=text]
 {
     visibility: hidden;
 }
+#recherche h1
+{
+    margin-bottom: -10px;
+}
 #activite, #recherche
- {
-     margin-top: 5px;
-     margin-bottom: 10px;
-     display: flex;
-     flex-direction: column;
- }
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
 .popbloc
  {
     display: flex;
@@ -845,9 +853,9 @@ input[type=text]
         display: flex;
         border-radius: 10px 10px 0 0;
     }
-    .poptext p
+    .poptxt
     {
-        margin-bottom: 0;
+        margin-left: 10px;
     }
     .popstar
     {
