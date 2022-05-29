@@ -174,47 +174,6 @@ footer
      margin-top: 20px;
      margin-right: 20px;
  }
-/*.butfil 
-{
-    position: relative;
-    height: 30px;
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    transition-duration: 0.4s;
-    border-radius: 15px;
-    border-color: #deebff;
-    border-style: solid;
-    background-color: white;
-    background: linear-gradient(90deg, #deebff 28px, white 28px);
-}
-.butfil span
-{
-    visibility: hidden;
-}
-.butfil::before
-{
-    z-index: 0;
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: #DEEBFF;
-    transition: all 0.4s ease-in-out;
-}
-.butfil:hover 
-{
-    background: #deebff;
-}
-.butfil i
-{
-    z-index: 1;
-    position: absolute;
-}*/
-
 #filtre p
 {
     font-weight: bold;
@@ -360,7 +319,7 @@ input[type=text]
     flex-direction: column;
 }
 .popbloc
- {
+{
     display: flex;
     background-color: white;
     padding: 3px;
@@ -369,17 +328,21 @@ input[type=text]
     box-shadow: 5px 10px 18px #888888;
     cursor: pointer;
     transition: 0.4S;
- }
+}
 .impop
 {
-    width: 40%;
+    width: 50%;
     margin-right: 20px;
     object-fit: cover;
 }
+.poptxt
+{
+    width: 45%;
+}
 .popbloc:hover
- {
+{
     transform: scale(1.02);
- }
+}
 .pophoto
 {
     width: 100%;
@@ -637,24 +600,6 @@ input[type=text]
         height: 3px;
         background: linear-gradient(90deg, #0065FC  50%, #F2F2F2 50%);    
     }
-    /*#heb::after
-    {
-        content: '';
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 3px;
-        background-color: #0065FC;
-    }
-    #activ::after
-    {
-        content: '';
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 3px;
-        background-color: #F2F2F2;
-    }*/
     #searchbar
     {
         width: 100%;
@@ -856,6 +801,7 @@ input[type=text]
     .poptxt
     {
         margin-left: 10px;
+        width: 100%;
     }
     .popstar
     {
