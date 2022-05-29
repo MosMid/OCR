@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booki</title>
         <link rel="stylesheet" href="CSS/normalize.css">
         <script src="https://kit.fontawesome.com/7611533170.js" crossorigin="anonymous"></script>
@@ -16,6 +16,7 @@
                 <a href="#" id="heb">Hébérgements</a>
                 <a href="#activite" id="activ">Activités</a>
             </div>
+            <div id="bicolor"></div>
         </header>
         <nav id="recherche">
             <h1>Trouvez votre logement pour des vacances de rêves</h1>
@@ -28,12 +29,28 @@
             </div>
             <div id="filtre">
                 <p>Filtres</p>
-                <button class="butfil"><i class="fa-solid fa-money-bill-wave" aria-hidden="true" style="color: blue;"></i><span>___</span>Economique</button>
-                <button class="butfil"><i class="fa fa-child" aria-hidden="true" style="color: blue;"></i><span>___</span>Famillial</button>
-                <button class="butfil"><i class="fa fa-heart" aria-hidden="true" style="color: blue;"></i><span>___</span>Romantique</button>
-                <button class="butfil"><i class="fa-solid fa-dog" aria-hidden="true" style="color: blue;"></i><span>___</span>Animeaux autorisés</button>
+                <!--<button class="butfil"><i class="fa-solid fa-money-bill-wave" aria-hidden="true" style="color: #0065FC;"></i><span>___</span>Economique</button>
+                <button class="butfil"><i class="fa fa-child" aria-hidden="true" style="color: #0065FC;"></i><span>___</span>Famillial</button>
+                <button class="butfil"><i class="fa fa-heart" aria-hidden="true" style="color: #0065FC;"></i><span>___</span>Romantique</button>
+                <button class="butfil"><i class="fa-solid fa-dog" aria-hidden="true" style="color: #0065FC;"></i><span>___</span>Animeaux autorisés</button>!-->
+                <label class="toggle but1">
+                    <input type="checkbox">
+                    <span class="slider"><i class="fa-solid fa-money-bill-wave buticon" aria-hidden="true"></i><p class="butext"><span class="transpar">_____</span>Economique</span></p>
+                </label>
+                <label class="toggle but2">
+                    <input type="checkbox">
+                    <span class="slider"><i class="fa fa-child buticon" aria-hidden="true"></i><p class="butext"><span class="transpar">_____</span>Famillial</span></p>
+                </label>
+                <label class="toggle but3">
+                    <input type="checkbox">
+                    <span class="slider"><i class="fa fa-heart buticon" aria-hidden="true"></i><p class="butext"><span class="transpar">_____</span>Romantique</span></p>
+                </label>
+                <label class="toggle but4">
+                    <input type="checkbox">
+                    <span class="slider"><i class="fa-solid fa-dog buticon" aria-hidden="true"></i><p class="butext"><span class="transpar">_____</span>Animeaux autorisés</span></p>
+                </label>
             </div>
-            <p><i class="fa fa-info-circle" aria-hidden="true" style="color: blue;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i class="fa fa-info-circle" aria-hidden="true" style="color: #0065FC;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
         </nav>
         <main>
@@ -47,7 +64,7 @@
                         <div class="hebtext">
                         <h3>Auberge la Cannebiere</h3>
                         <p>nuit à partir de 25<i class="fa fa-eur" aria-hidden="true"></i></p>
-                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i></div>
+                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="content">
@@ -57,7 +74,7 @@
                         <div class="hebtext">
                         <h3>Hotel du port</h3>
                         <p>nuit à partir de 52<i class="fa fa-eur" aria-hidden="true"></i></p>
-                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i></div>
+                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="content">
@@ -67,7 +84,7 @@
                         <div class="hebtext">
                         <h3>Hotel des mouettes</h3>
                         <p>nuit à partir de 76<i class="fa fa-eur" aria-hidden="true"></i></p>
-                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i></div>
+                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="content">
@@ -77,7 +94,7 @@
                         <div class="hebtext">
                         <h3>Hotel de la mer</h3>
                         <p>nuit à partir de 46<i class="fa fa-eur" aria-hidden="true"></i></p>
-                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i></div>
+                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="content">
@@ -87,7 +104,7 @@
                         <div class="hebtext">
                         <h3>auberge Le panier</h3>
                         <p>nuit à partir de 23<i class="fa fa-eur" aria-hidden="true"></i></p>
-                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i></div>
+                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="content">
@@ -97,7 +114,7 @@
                         <div class="hebtext">
                         <h3>Hotel chez Amina</h3>
                         <p>nuit à partir de 96<i class="fa fa-eur" aria-hidden="true"></i></p>
-                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i></div>
+                        <div class="stars"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                 </div>
@@ -113,7 +130,7 @@
                         <div class="poptxt">
                             <h3>Hotel le soleil du matin</h3>
                             <p>nuit à partir de 128<i class="fa fa-eur" aria-hidden="true"></i></p>
-                            <div class="stars popstar"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i></div>
+                            <div class="stars popstar"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="popbloc">
@@ -123,7 +140,7 @@
                         <div class="poptxt">
                             <h3>Hotel le soleil du matin</h3>
                             <p>nuit à partir de 71<i class="fa fa-eur" aria-hidden="true"></i></p>
-                            <div class="stars popstar"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i></div>
+                            <div class="stars popstar"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                     <div class="popbloc">
@@ -133,7 +150,7 @@
                         <div class="poptxt">
                             <h3>Hotel le soleil du matin</h3>
                             <p>nuit à partir de 68<i class="fa fa-eur" aria-hidden="true"></i></p>
-                            <div class="stars popstar"><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star star" aria-hidden="true" style="color: blue;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: blue;"></i></div>
+                            <div class="stars popstar"><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star star" aria-hidden="true" style="color: #0065FC;"></i><i class="fa fa-star-o star" aria-hidden="true" style="color: #0065FC;"></i></div>
                         </div>
                     </div>
                 </div>
