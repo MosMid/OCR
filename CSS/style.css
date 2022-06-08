@@ -57,11 +57,13 @@ h3
     width: 160px;
     text-align: center;
     padding-top: 30px;
-    border-top: 2px solid;
+    border-top: 2px solid transparent;
+    transition: 0.8s;
     margin-right: -25px;
 }
 #heb:hover
 {
+    border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 #pactiv
@@ -74,10 +76,12 @@ h3
     width: 160px;
     text-align: center;
     padding-top: 30px;
-    border-top: 2px solid;
+    border-top: 2px solid transparent;
+    transition: 0.8s;
 }
 #activ:hover
 {
+    border-top: 2px solid #0065FC;
     color: #0065FC;
 }
 #hebergement
